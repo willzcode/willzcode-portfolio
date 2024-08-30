@@ -247,7 +247,7 @@ nav ul {
 .project-card a {
   color: var(--clr-main-white);
   font-size: 0.8rem;
-  margin-right: -1rem;
+  margin-right: -0.7rem;
   text-decoration: none;
   margin-bottom: 20rem;
   margin-left: 1rem;
@@ -269,6 +269,61 @@ nav ul {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
+}
+
+.contact {
+  width: 90%;
+  margin: 0 auto 5rem auto;
+}
+
+.contact h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+  color: var(--clr-light-gray);
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  font-size: 0.9rem;
+  color: var(--clr-main-white);
+}
+
+.contact input {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--clr-background-blue);
+  border: 2px solid var(--clr-main-blue);
+  margin-top: 1rem;
+  outline: none;
+  color: var(--clr-main-white);
+  font-size: 0.9rem;
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact textarea {
+  background-color: var(--clr-background-blue);
+  border: 2px solid var(--clr-main-blue);
+  width: 100%;
+  min-height: 80px;
+  margin-top: 1rem;
+  outline: none;
+  padding: 1rem;
+  color: var(--clr-main-white);
+  font-size: 1rem;
+}
+
+.submit input {
+  background-color: var(--clr-main-blue);
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+  border: none;
 }
 
 @media (max-width: 900px) {
