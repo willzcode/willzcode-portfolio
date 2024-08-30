@@ -173,7 +173,7 @@ nav ul {
 @media (max-width: 360px) {
   .resume-talk {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .resume-talk a {
