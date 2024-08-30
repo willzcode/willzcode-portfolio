@@ -29,6 +29,11 @@ body {
 header {
   background-color: var(--clr-background-blue);
   padding: 1em 0;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  border: 1px solid #fff;
 }
 
 .header-container {
@@ -37,7 +42,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #fff;
 }
 
 .logo span {
@@ -59,51 +63,63 @@ nav ul {
   font-size: 0.9rem;
 }
 
+.nav-links a:hover {
+  color: var(--clr-main-blue);
+}
+
 .about {
-    width: 90%;
-    margin: 0 auto;
-    border: 1px solid #fff;
+  width: 90%;
+  margin: 10rem auto 0 auto;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-text-container {
+  width: 50%;
 }
 
 .about-text-container .wave {
-    font-size:1.2rem;
-    color: var(--clr-main-white);
-    font-weight: 700;
-    font-family: "Ubuntu", sans-serif;
+  font-size: 1.2rem;
+  color: var(--clr-main-white);
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .about-text-container h1 {
-    font-size: clamp(3rem, 7vw, 4rem);
-    color: var(--clr-main-white);
-    font-weight: 700;
-    font-family: "Ubuntu", sans-serif;
+  font-size: clamp(3rem, 7vw, 4rem);
+  color: var(--clr-main-white);
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .about-text-container h1 span {
-    color: var(--clr-main-blue);
+  color: var(--clr-main-blue);
 }
 
 .about-text-container p {
-    color: var(--clr-main-white);
-    font-size: 0.9rem;
-    margin-top: 0.2rem;
+  color: var(--clr-main-white);
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
 }
 
 .about-text-container p span {
-    color: var(--clr-light-blue);
+  color: var(--clr-light-blue);
 }
 
 .resume-talk {
-    margin: 2rem 0;
+  margin: 1rem 0;
+  display: flex;
+  gap: 1rem;
 }
 
 .resume-talk a {
-    text-decoration: none;
-    color: var(--clr-main-white);
-    background-color: var(--clr-deep-blue);
-    padding: 1em 2em;
-    margin-right: 0.5rem;
-    font-size: clamp(0.8rem, 7vw, 1rem);
+  text-decoration: none;
+  color: var(--clr-main-white);
+  background-color: var(--clr-deep-blue);
+  padding: 1em 2em;
+  font-size: 1rem;
 }
 
 .socials a {
@@ -116,9 +132,51 @@ nav ul {
   margin-right: 0.5rem;
 }
 
+.socials img:hover {
+  filter: grayscale(100%);
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  filter: grayscale(0%);
+}
+
+.about-image img:hover {
+  filter: grayscale(100%);
+}
+
+@media (max-width: 900px) {
+  .about {
+    display: block;
+    margin: 7rem auto 0 auto;
+  }
+
+  .about-text-container {
+    width: 100%;
+  }
+
+  .about-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}
 
 @media (max-width: 700px) {
   .nav-links {
     display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .resume-talk {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .resume-talk a {
+    font-size: 0.8rem;
   }
 }
