@@ -33,7 +33,7 @@ header {
   width: 100%;
   z-index: 999;
   top: 0;
-  border: 1px solid #fff;
+  /* border: 1px solid #fff; */
 }
 
 .header-container {
@@ -70,7 +70,7 @@ nav ul {
 .about {
   width: 90%;
   margin: 10rem auto 5rem auto;
-  border: 1px solid #fff;
+  /* border: 1px solid #fff; */
   display: flex;
   justify-content: space-between;
   align-items: center;
