@@ -69,7 +69,7 @@ nav ul {
 
 .about {
   width: 90%;
-  margin: 10rem auto 0 auto;
+  margin: 10rem auto 5rem auto;
   border: 1px solid #fff;
   display: flex;
   justify-content: space-between;
@@ -147,10 +147,60 @@ nav ul {
   filter: grayscale(100%);
 }
 
+.skills {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.skills span {
+  font-size: 1.2rem;
+  color: var(--clr-main-white);
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+  color: var(--clr-light-gray);
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.skill-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  padding: 1rem 2rem;
+  background-color: var(--clr-deep-blue);
+  width: 100px;
+  height: 100px;
+  gap: 0.5rem;
+  border: 1px solid var(--clr-deep-blue);
+}
+
+.skill-card:hover {
+  border: 1px solid var(--clr-light-gray);
+}
+
+.skill-card img {
+  width: 30px;
+  height: 30px;
+}
+
+.skill-card p {
+  font-weight: 500;
+  color: var(--clr-light-gray);
+  font-size: 0.8rem;
+}
+
 @media (max-width: 900px) {
   .about {
     display: block;
-    margin: 7rem auto 0 auto;
+    margin: 7rem auto 3rem auto;
   }
 
   .about-text-container {
