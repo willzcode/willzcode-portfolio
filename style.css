@@ -118,10 +118,14 @@ nav ul {
   text-decoration: none;
   color: var(--clr-main-white);
   background-color: var(--clr-deep-blue);
-  padding: 1em 2em;
+  padding: 0.8em 1.8em;
   font-size: 1rem;
+  border: 2px solid var(--clr-deep-blue);
 }
 
+.resume-talk a:hover {
+  border: 2px solid var(--clr-main-blue);
+}
 .socials a {
   color: #ffffff00;
   text-decoration: none;
@@ -149,7 +153,8 @@ nav ul {
 
 .skills {
   width: 90%;
-  margin: 0 auto;
+  margin: 6.5rem auto;
+  border: 1px solid #fff;
 }
 
 .skills span {
@@ -179,11 +184,11 @@ nav ul {
   width: 90px;
   height: 90px;
   gap: 0.2rem;
-  border: 1px solid var(--clr-deep-blue);
+  border: 2px solid var(--clr-deep-blue);
 }
 
 .skill-card:hover {
-  border: 1px solid var(--clr-light-gray);
+  border: 2px solid var(--clr-main-blue);
 }
 
 .skill-card img {
