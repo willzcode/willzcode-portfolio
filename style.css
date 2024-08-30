@@ -80,7 +80,7 @@ nav ul {
   width: 50%;
 }
 
-.about-text-container .wave {
+.about-text-container h3 {
   font-size: 1.2rem;
   color: var(--clr-main-white);
   font-weight: 700;
@@ -156,9 +156,8 @@ nav ul {
   margin: 6.5rem auto;
 }
 
-.skills span {
+.skills h3 {
   font-size: 1.2rem;
-  color: var(--clr-main-white);
   font-weight: 700;
   font-family: "Ubuntu", sans-serif;
   color: var(--clr-light-gray);
@@ -201,6 +200,77 @@ nav ul {
   font-size: 0.8rem;
 }
 
+.projects {
+  width: 90%;
+  margin: 0 auto 5rem auto;
+}
+
+.projects h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+  color: var(--clr-light-gray);
+  margin-bottom: 1rem;
+}
+
+.project-image img {
+  width: 100%;
+  max-width: 450px;
+}
+
+.project-card h4 {
+  font-size: 1.2rem;
+  color: var(--clr-main-white);
+  font-weight: 500;
+  font-family: "Ubuntu", sans-serif;
+  color: var(--clr-main-white);
+  margin: 1rem 0 0 1rem;
+}
+
+.project-card span {
+  font-size: 0.9rem;
+  color: var(--clr-main-white);
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+  color: var(--clr-light-blue);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  color: var(--clr-main-white);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.project-card a {
+  color: var(--clr-main-white);
+  font-size: 0.8rem;
+  margin-right: -1rem;
+  text-decoration: none;
+  margin-bottom: 20rem;
+  margin-left: 1rem;
+}
+
+.project-card {
+  width: 100%;
+  max-width: 450px;
+  padding-bottom: 1rem;
+  background-color: var(--clr-deep-blue);
+  margin: 0 auto;
+}
+
+.project-card:hover {
+  transform: translateY(20px);
+}
+
+.projects-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
 @media (max-width: 900px) {
   .about {
     display: block;
@@ -215,6 +285,10 @@ nav ul {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
+  }
+
+  .projects-container {
+    flex-wrap: wrap;
   }
 }
 
