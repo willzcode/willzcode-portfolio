@@ -326,6 +326,17 @@ nav ul {
   border: none;
 }
 
+footer {
+  width: 90%;
+  margin: 0 auto 1rem auto;
+}
+
+footer p {
+  color: var(--clr-main-white);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
 @media (max-width: 900px) {
   .about {
     display: block;
