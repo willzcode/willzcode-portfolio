@@ -179,8 +179,8 @@ nav ul {
   width: fit-content;
   padding: 1rem 2rem;
   background-color: var(--clr-deep-blue);
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   gap: 0.2rem;
   border: 2px solid var(--clr-deep-blue);
 }
@@ -351,6 +351,11 @@ footer p {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
+  }
+
+  .skill-card {
+    width: 90px;
+    height: 90px;
   }
 
   .projects-container {
