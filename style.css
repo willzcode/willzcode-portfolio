@@ -24,6 +24,8 @@ html {
 body {
   background-color: var(--clr-background-blue);
   font-family: "Poppins", sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 header {
@@ -31,9 +33,9 @@ header {
   padding: 1em 0;
   position: fixed;
   width: 100%;
+  max-width: 1440px;
   z-index: 999;
   top: 0;
-  /* border: 1px solid #fff; */
 }
 
 .header-container {
