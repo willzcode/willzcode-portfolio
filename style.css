@@ -368,15 +368,32 @@ footer p {
 @media (max-width: 700px) {
   .nav-links {
     display: none;
+  }
+
+  .nav-links.active {
+    display: block;
+  }
+
+  .nav-links ul {
+    position: absolute;
+    top: 66px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 250px;
+    display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    align-items: center;
     justify-content: center;
+    background-color: var(--clr-background-blue);
   }
 
   .menu-bar {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    cursor: pointer;
   }
 
   .menu-bar .bar {
